@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVR4R5BF1x8DLDwLsQgNu5fH9Tk3gnfA4",
+    authDomain: "pathme-nvytla7.firebaseapp.com",
+    databaseURL: "https://pathme-nvytla7.firebaseio.com",
+    projectId: "pathme-nvytla7",
+    storageBucket: "pathme-nvytla7.appspot.com",
+    messagingSenderId: "783106324758"
+  };
+  firebase.initializeApp(config);
+</script>
+<title>Path.me</title>
+<head>
+    <link rel="shortcut icon" href="LogoMakr_6JwbTf.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- necessary to show button -->
+    <link rel="stylesheet" href="home_page.css">
+
+</head>
+
+<body>
+    <header class="w3-panel w3-center" style="padding:20px 16px">
+        <h1>Navigation</h1>
+        <div class="center-div">
+            <div class="padding-top-50-div">
+
+              <div class="form-group">
+                <legend style="color: white">Select Destination</legend>
+                <script type="text/javascript">
+                function changeFunc() {
+                  var scrollSelect = document.getElementById("scrollSelect");
+                  var selectedValue = scrollSelect.options[scrollSelect.selectedIndex].value;
+                  changeImage(selectedValue);
+
+                }
+
+                function changeImage(imgName) {
+                  image = document.getElementById('mallMap');
+                  if (imgName == "Ashley's Beer & Grill") {
+                    image.src = "mall_map_beer_grill.png";
+                  }
+                  else if (imgName == "Kohl's") {
+                    image.src = "mall_map_kohls.png";
+                  }
+                  else if (imgName == "Longhorn Steakhouse") {
+                    image.src = "mall_map_steakhouse.png";
+                  }
+                  else if (imgName == "Macy's") {
+                    image.src = "mall_map_macys.png";
+                  }
+                  else if (imgName == "Panera Bread") {
+                    image.src = "mall_map_panera.png";
+                  }
+                  else if (imgName == "Sears") {
+                    image.src = "mall_map_sears.png";
+                  }
+                  else if (imgName == "JCPenney") {
+                    image.src = "mall_map_jcpenney.png";
+                  }
+                  else {
+                    alert("sorry, not destination found");
+                  }
+                }
+                </script>
+                <select class="form-control" id="scrollSelect" onchange="changeFunc();">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option>Ashley's Beer & Grill</option>
+                  <option>Kohl's</option>
+                  <option>Longhorn Steakhouse</option>
+                  <option>Macy's</option>
+                  <option>Panera Bread</option>
+                  <option>Sears</option>
+                  <option>JCPenney</option>
+                </select>
+              </div>
+            </div>
+        </div>
+
+        <img id="mallMap" src="mall_map.png"/>
+</body>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<style>
+    body,
+    h1 {
+        font-family: 'Source Sans Pro', 'Roboto', sans-serif
+    }
+
+    h1 {
+        letter-spacing: 8px, color: white
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 10px
+    }
+
+    .white {
+        color: #ffffff
+    }
+
+    .heart {
+      color:#e25555;
+    }
+</style>
+
+
+<body>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+      <!-- Header -->
+      <header class="w3-panel w3-center" style="padding:80px 16px">
+            <div class="center-div">
+                <div class="w3-padding-32">
+                    <div class="padding-top-50-div">
+
+                        <p>
+                            <button type="button" onclick="window.location='index.html'" class="btn btn-default btn-sm">
+         <i class="fas fa-file-upload"></i>
+       </button>
+                        </p>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </header>
+          </div>
+            <!-- Photo Grid -->
+            <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+                <div class="w3-half">
+                </div>
+
+                <div class="w3-half">
+                </div>
+            </div>
+
+            <!-- End Page Content -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+          <p>Made with <span class="heart">❤</span> by Lolz</p>
+          <i onclick="window.location='https://www.facebook.com/nvytla'" class="fab fa-facebook-f w3-hover-opacity"></i>
+          <i onclick="window.location='https://www.instagram.com/nik.vy/'" class="fab fa-instagram w3-hover-opacity"></i>
+          <i onclick="window.location='https://github.com/Lolz1243'" class="fab fa-github w3-hover-opacity"></i>
+        </footer>
+
+    </body>
+
+    </html>

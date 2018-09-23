@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVR4R5BF1x8DLDwLsQgNu5fH9Tk3gnfA4",
+    authDomain: "pathme-nvytla7.firebaseapp.com",
+    databaseURL: "https://pathme-nvytla7.firebaseio.com",
+    projectId: "pathme-nvytla7",
+    storageBucket: "pathme-nvytla7.appspot.com",
+    messagingSenderId: "783106324758"
+  };
+  firebase.initializeApp(config);
+  var provider = new firebase.auth.GoogleAuthProvider();
+</script>
+  <script src="index.js"></script>
+<title>Path.Me</title>
+
+<head>
+    <link rel="shortcut icon" href="LogoMakr_6JwbTf.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- necessary to show button -->
+    <link rel="stylesheet" href="home_page.css">
+
+
+</head>
+
+<body>
+    <img src="LogoMakr_0OxHIg.png"> <!-- CHANGE ASAP-->
+    <div class="button">
+
+    </div>
+
+
+</body>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<style>
+    body,
+    h1 {
+        font-family: 'Source Sans Pro', 'Roboto', sans-serif
+    }
+
+    h1 {
+        letter-spacing: 8px, color: white
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 10px
+    }
+
+    .white {
+        color: #ffffff
+    }
+    .heart {
+      color:#e25555;
+    }
+</style>
+
+<body>
+
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+
+        <!-- Header -->
+        <header class="w3-panel w3-center" style="padding:80px 16px">
+            <h1>By Nikhil Vytla</h1>
+            <div class="center-div">
+
+                <a href="#" onclick="window.location='upload_page.html'">
+				<span class="fas fa-camera"></span>
+
+			</a>
+            </div>
+        </header>
+
+        <!-- Photo Grid -->
+        <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+            <div class="w3-half">
+            </div>
+
+            <div class="w3-half">
+            </div>
+        </div>
+
+        <!-- End Page Content -->
+    </div>
+    <div class="center-div">
+    <div id="login_div" class="main-div">
+      <h3>Authentication</h3>
+      <input type="email" placeholder="Email" id="email_field" />
+      <input type="password" placeholder="Password" id="password_field" />
+
+      <button onclick="login()">Login to Account</button>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+      <h3>Welcome User</h3>
+      <p id="user_para">You are currently logged in.</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <br></br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+        <p>Made with <span class="heart">❤</span> by Lolz</p>
+        <i onclick="window.location='https://www.facebook.com/nvytla'" class="fab fa-facebook-f w3-hover-opacity"></i>
+        <i onclick="window.location='https://www.instagram.com/nik.vy/'" class="fab fa-instagram w3-hover-opacity"></i>
+        <i onclick="window.location='https://github.com/Lolz1243'" class="fab fa-github w3-hover-opacity"></i>
+    </footer>
+
+</body>
+
+</html>
