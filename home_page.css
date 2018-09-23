@@ -1,0 +1,64 @@
+body {
+    /* background-color: lightblue; */
+    background: linear-gradient(#1162bc, #092d63);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+  position: absolute;
+    bottom: 10px;
+}
+
+span.fa-camera {
+    font-size: 15em;
+}
+
+
+span.fa-file-upload {
+  font-size: 15em;
+  color: #8DA5ED;
+}
+
+.center-div
+{
+  text-align: center;
+
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.padding-top-div {
+    padding-top: 200px;
+}
+
+.padding-top-50-div {
+    padding-top: 50px;
+}
+
+/* .site-footer .icon {
+	font-size: 20px;
+}
+
+.site-footer .love .icon {
+	font-size: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+} */
+
+.dropdown {text-align:center;}
+.button, .dropdown-menu {margin:10px auto}
+.dropdown-menu {width:200px; left:50%; margin-left:-100px;}
